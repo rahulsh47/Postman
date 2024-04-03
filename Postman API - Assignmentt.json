@@ -15,6 +15,20 @@
 					"name": "Create User (TC-01) [P] One should able to create user with valid Name and Valid Email",
 					"event": [
 						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function(){",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"var userData = pm.response.json();",
+									"pm.environment.set(\"id\", userData.id);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
 							"listen": "prerequest",
 							"script": {
 								"exec": [
@@ -27,7 +41,8 @@
 									"pm.environment.set(\"email\", email);",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
