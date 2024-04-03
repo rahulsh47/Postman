@@ -460,19 +460,21 @@
 									"pm.environment.set(\"email\", email);",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						},
 						{
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 201\", function(){",
-									"    pm.response.to.have.status(201);",
+									"pm.test(\"Status code is 422\", function(){",
+									"    pm.response.to.have.status(422);",
 									"});",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -768,7 +770,8 @@
 									"    pm.response.to.have.status(200);",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -791,7 +794,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{url}}/public/v2/users/6759304",
+							"raw": "{{url}}/public/v2/users/{{id}}",
 							"host": [
 								"{{url}}"
 							],
@@ -799,14 +802,14 @@
 								"public",
 								"v2",
 								"users",
-								"6759304"
+								"{{id}}"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Update User(TC-02)[P] One should be able to update the user details with valid user Id Copy and with Special Characters",
+					"name": "Update User(TC-02)[P] One should be able to update the user details with valid user id Special Characters",
 					"event": [
 						{
 							"listen": "test",
@@ -816,7 +819,8 @@
 									"    pm.response.to.have.status(200);",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -839,7 +843,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{url}}/public/v2/users/6759304",
+							"raw": "{{url}}/public/v2/users/{{id}}",
 							"host": [
 								"{{url}}"
 							],
@@ -847,7 +851,7 @@
 								"public",
 								"v2",
 								"users",
-								"6759304"
+								"{{id}}"
 							]
 						}
 					},
@@ -864,7 +868,8 @@
 									"    pm.response.to.have.status(200);",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -887,7 +892,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{url}}/public/v2/users/6759304",
+							"raw": "{{url}}/public/v2/users/{{id}}",
 							"host": [
 								"{{url}}"
 							],
@@ -895,7 +900,7 @@
 								"public",
 								"v2",
 								"users",
-								"6759304"
+								"{{id}}"
 							]
 						}
 					},
@@ -1259,7 +1264,8 @@
 									"});",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -1282,7 +1288,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{url}}/public/v2/users/ \n",
+							"raw": "{{url}}/public/v2/users/{{ }}\n",
 							"host": [
 								"{{url}}"
 							],
@@ -1290,7 +1296,7 @@
 								"public",
 								"v2",
 								"users",
-								" \n"
+								"{{ }}\n"
 							]
 						}
 					},
