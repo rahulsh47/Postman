@@ -803,7 +803,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"rahul142400\",\n    \"email\": \"rahul42400@gmail.com\",\n    \"gender\": \"male\",\n    \"status\": \"active\"\n}",
+							"raw": "{\n    \"name\": \"{{name}}\",\n    \"email\": \"{{email}}\",\n    \"gender\": \"male\",\n    \"status\": \"active\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
