@@ -5,7 +5,7 @@
 		"description": "This Collection consists of the four folders into which i have created requests for CRUD operations .\n\nPosititve and Negative tests are also included in each folder for every CRUD opeartion.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "32967069",
-		"_collection_link": "https://speeding-sunset-698093.postman.co/workspace/f0718df3-9c15-411f-8c69-780525908ec3/collection/32967069-5609dcc9-9e41-46d8-8648-7ea19d1af7ff?action=share&source=collection_link&creator=32967069"
+		"_collection_link": "https://speeding-sunset-698093.postman.co/workspace/My-Workspace~f0718df3-9c15-411f-8c69-780525908ec3/collection/32967069-5609dcc9-9e41-46d8-8648-7ea19d1af7ff?action=share&source=collection_link&creator=32967069"
 	},
 	"item": [
 		{
@@ -1160,7 +1160,8 @@
 									"});",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -1183,7 +1184,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{url}}/public/v2/users/6759335\n",
+							"raw": "{{url}}/public/v2/users/{{id}}\n",
 							"host": [
 								"{{url}}"
 							],
@@ -1191,7 +1192,7 @@
 								"public",
 								"v2",
 								"users",
-								"6759335\n"
+								"{{id}}\n"
 							]
 						}
 					},
