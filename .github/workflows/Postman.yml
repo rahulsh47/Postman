@@ -33,7 +33,7 @@ jobs:
       - name : Install Node
         uses: actions/checkout@v4
         with:
-           node-version : '20'
+           node-version : 12
       # Install Newman and Reporter
       - name : Install Newman
         run : |
